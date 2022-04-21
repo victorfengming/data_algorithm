@@ -1,0 +1,3767 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2 · data algorithm</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Victor <victorfengming@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="001_面试题_几个经典的算法面试题.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://victorfengming.gitee.io/index/gitbook/" target="_blank" class="custom-link">文档索引页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    几个经典的算法面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="001_面试题_几个经典的算法面试题.html">
+            
+                <a href="001_面试题_几个经典的算法面试题.html">
+            
+                    
+                    1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="002_面试题_几个经典的算法面试题2.html">
+            
+                <a href="002_面试题_几个经典的算法面试题2.html">
+            
+                    
+                    2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    准备
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="003_前言_内容介绍和授课方式.html">
+            
+                <a href="003_前言_内容介绍和授课方式.html">
+            
+                    
+                    前言_内容介绍和授课方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="004_起步_数据结构和算法的关系.html">
+            
+                <a href="004_起步_数据结构和算法的关系.html">
+            
+                    
+                    起步_数据结构和算法的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="005_起步_编程中遇到的问题.html">
+            
+                <a href="005_起步_编程中遇到的问题.html">
+            
+                    
+                    起步_编程中遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="006_入门_线性结构和非线性结构.html">
+            
+                <a href="006_入门_线性结构和非线性结构.html">
+            
+                    
+                    入门_线性结构和非线性结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    稀疏数组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="007_稀疏数组_应用场景.html">
+            
+                <a href="007_稀疏数组_应用场景.html">
+            
+                    
+                    应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="008_稀疏数组_转换思路分析.html">
+            
+                <a href="008_稀疏数组_转换思路分析.html">
+            
+                    
+                    转换思路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="009_稀疏数组_代码实现.html">
+            
+                <a href="009_稀疏数组_代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../队列/010_队列_介绍.html">
+            
+                <a href="../队列/010_队列_介绍.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    数组模拟队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../队列/011_队列_数组模拟队列_思路分析.html">
+            
+                <a href="../队列/011_队列_数组模拟队列_思路分析.html">
+            
+                    
+                    思路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../队列/012_队列_数组模拟队列_代码实现.html">
+            
+                <a href="../队列/012_队列_数组模拟队列_代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    数组模拟环形队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../队列/014_队列_数组模拟环形队列_思路分析图.html">
+            
+                <a href="../队列/014_队列_数组模拟环形队列_思路分析图.html">
+            
+                    
+                    思路分析图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../队列/015_队列_数组模拟环形队列_实现.html">
+            
+                <a href="../队列/015_队列_数组模拟环形队列_实现.html">
+            
+                    
+                    实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    链表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    单链表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../链表/016_链表_单链表_介绍和内存布局.html">
+            
+                <a href="../链表/016_链表_单链表_介绍和内存布局.html">
+            
+                    
+                    介绍和内存布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../链表/017_链表_单链表_代码.html">
+            
+                <a href="../链表/017_链表_单链表_代码.html">
+            
+                    
+                    代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../链表/017_链表_单链表_创建和遍历的分析实现.html">
+            
+                <a href="../链表/017_链表_单链表_创建和遍历的分析实现.html">
+            
+                    
+                    创建和遍历的分析实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../链表/018_链表_单链表_按顺序插入节点.html">
+            
+                <a href="../链表/018_链表_单链表_按顺序插入节点.html">
+            
+                    
+                    按顺序插入节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../链表/019_链表_单链表_节点的修改.html">
+            
+                <a href="../链表/019_链表_单链表_节点的修改.html">
+            
+                    
+                    节点的修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../链表/020_链表_单链表_节点的删除和小结.html">
+            
+                <a href="../链表/020_链表_单链表_节点的删除和小结.html">
+            
+                    
+                    节点的删除和小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../链表/021_链表_单链表_新浪面试题.html">
+            
+                <a href="../链表/021_链表_单链表_新浪面试题.html">
+            
+                    
+                    新浪面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../链表/022_链表_单链表_腾讯面试题.html">
+            
+                <a href="../链表/022_链表_单链表_腾讯面试题.html">
+            
+                    
+                    腾讯面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../链表/023_链表_单链表_百度面试题.html">
+            
+                <a href="../链表/023_链表_单链表_百度面试题.html">
+            
+                    
+                    百度面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    双向链表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../链表/024_链表_双向链表_增删改查分析图解.html">
+            
+                <a href="../链表/024_链表_双向链表_增删改查分析图解.html">
+            
+                    
+                    增删改查分析图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../链表/025_链表_双向链表_增删改查代码实现.html">
+            
+                <a href="../链表/025_链表_双向链表_增删改查代码实现.html">
+            
+                    
+                    增删改查代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../链表/026_链表_双向链表_功能测试和小结.html">
+            
+                <a href="../链表/026_链表_双向链表_功能测试和小结.html">
+            
+                    
+                    功能测试和小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    环形链表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../链表/027_链表_环形链表_介绍和约瑟夫问题.html">
+            
+                <a href="../链表/027_链表_环形链表_介绍和约瑟夫问题.html">
+            
+                    
+                    环形链表_介绍和约瑟夫问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../链表/028_链表_环形链表_约瑟夫问题分析图解和实现.html">
+            
+                <a href="../链表/028_链表_环形链表_约瑟夫问题分析图解和实现.html">
+            
+                    
+                    环形链表_约瑟夫问题分析图解和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    栈
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../栈/030_栈_应用场景和介绍.html">
+            
+                <a href="../栈/030_栈_应用场景和介绍.html">
+            
+                    
+                    应用场景和介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../栈/031_栈_思路分析和代码实现.html">
+            
+                <a href="../栈/031_栈_思路分析和代码实现.html">
+            
+                    
+                    思路分析和代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../栈/032_栈_功能测试和小结.html">
+            
+                <a href="../栈/032_栈_功能测试和小结.html">
+            
+                    
+                    功能测试和小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" >
+            
+                <span>
+            
+                    
+                    栈实现综合计算器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../栈/033_栈_栈实现综合计算器_思路分析.html">
+            
+                <a href="../栈/033_栈_栈实现综合计算器_思路分析.html">
+            
+                    
+                    思路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="../栈/034_栈_栈实现综合计算器_代码实现.html">
+            
+                <a href="../栈/034_栈_栈实现综合计算器_代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3" data-path="../栈/035_栈_栈实现综合计算器_代码实现.html">
+            
+                <a href="../栈/035_栈_栈实现综合计算器_代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    表达式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../036_前缀_中缀_后缀表达式规则.md">
+            
+                <span>
+            
+                    
+                    前缀中缀后缀表达式规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../037_逆波兰计算器分析和实现.md">
+            
+                <span>
+            
+                    
+                    逆波兰计算器分析和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../039_中缀转后缀表达式思路分析.md">
+            
+                <span>
+            
+                    
+                    中缀转后缀表达式思路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../040_中缀转后缀表达式代码实现.md">
+            
+                <span>
+            
+                    
+                    中缀转后缀表达式代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../042_完整版逆波兰计算器和小结.md">
+            
+                <span>
+            
+                    
+                    完整版逆波兰计算器和小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    递归
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../递归/043_递归应用场景和调用机制.html">
+            
+                <a href="../递归/043_递归应用场景和调用机制.html">
+            
+                    
+                    递归应用场景和调用机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../递归/044_递归能解决的问题和规则.html">
+            
+                <a href="../递归/044_递归能解决的问题和规则.html">
+            
+                    
+                    递归能解决的问题和规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../递归/045_迷宫回溯问题分析和实现.html">
+            
+                <a href="../递归/045_迷宫回溯问题分析和实现.html">
+            
+                    
+                    迷宫回溯问题分析和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../递归/047_八皇后问题分析和实现.html">
+            
+                <a href="../递归/047_八皇后问题分析和实现.html">
+            
+                    
+                    八皇后问题分析和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    频度和复杂度
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../频度和复杂度/050_排序算法介绍和分类.html">
+            
+                <a href="../频度和复杂度/050_排序算法介绍和分类.html">
+            
+                    
+                    排序算法介绍和分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../频度和复杂度/051_时间频度介绍和特点.html">
+            
+                <a href="../频度和复杂度/051_时间频度介绍和特点.html">
+            
+                    
+                    时间频度介绍和特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../频度和复杂度/052_时间复杂度计算和举例说明.html">
+            
+                <a href="../频度和复杂度/052_时间复杂度计算和举例说明.html">
+            
+                    
+                    时间复杂度计算和举例说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../频度和复杂度/053_平均和最坏时间复杂度介绍.html">
+            
+                <a href="../频度和复杂度/053_平均和最坏时间复杂度介绍.html">
+            
+                    
+                    平均和最坏时间复杂度介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" >
+            
+                <span>
+            
+                    
+                    冒泡排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../排序/054_排序_冒泡排序_算法思路图解.html">
+            
+                <a href="../排序/054_排序_冒泡排序_算法思路图解.html">
+            
+                    
+                    算法思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="../排序/055_排序_冒泡排序_算法代码实现.html">
+            
+                <a href="../排序/055_排序_冒泡排序_算法代码实现.html">
+            
+                    
+                    算法代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="../排序/056_排序_冒泡排序_算法优化.html">
+            
+                <a href="../排序/056_排序_冒泡排序_算法优化.html">
+            
+                    
+                    算法优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" data-path="../排序/056_排序_冒泡排序_算法总结.html">
+            
+                <a href="../排序/056_排序_冒泡排序_算法总结.html">
+            
+                    
+                    算法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    选择排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="../排序/057_排序_选择排序算法思路图解.html">
+            
+                <a href="../排序/057_排序_选择排序算法思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="../排序/058_排序_选择排序算法代码实现.html">
+            
+                <a href="../排序/058_排序_选择排序算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="../排序/059_排序_选择排序算法速度测试.html">
+            
+                <a href="../排序/059_排序_选择排序算法速度测试.html">
+            
+                    
+                    速度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="../排序/058_排序_选择排序算法总结.html">
+            
+                <a href="../排序/058_排序_选择排序算法总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" >
+            
+                <span>
+            
+                    
+                    插入排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="../排序/060_排序_插入排序算法思路图解.html">
+            
+                <a href="../排序/060_排序_插入排序算法思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.2" data-path="../排序/061_排序_插入排序算法代码实现.html">
+            
+                <a href="../排序/061_排序_插入排序算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.3" data-path="../排序/062_排序_插入排序算法速度测试.html">
+            
+                <a href="../排序/062_排序_插入排序算法速度测试.html">
+            
+                    
+                    速度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.4" data-path="../排序/061_排序_插入排序算法总结.html">
+            
+                <a href="../排序/061_排序_插入排序算法总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    希尔排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.4.1" data-path="../排序/063_排序_希尔排序算法思路图解.html">
+            
+                <a href="../排序/063_排序_希尔排序算法思路图解.html">
+            
+                    
+                    算法思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.2" data-path="../排序/064_排序_希尔排序_交换式_算法实现.html">
+            
+                <a href="../排序/064_排序_希尔排序_交换式_算法实现.html">
+            
+                    
+                    交换式_算法实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.3" data-path="../排序/065_排序_希尔排序_移位式_算法实现.html">
+            
+                <a href="../排序/065_排序_希尔排序_移位式_算法实现.html">
+            
+                    
+                    移位式_算法实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.4" data-path="../排序/065_排序_希尔排序_总结.html">
+            
+                <a href="../排序/065_排序_希尔排序_总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    快速排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.5.1" data-path="../排序/066_排序_快速排序算法思路图解.html">
+            
+                <a href="../排序/066_排序_快速排序算法思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5.2" data-path="../排序/067_排序_快速排序算法代码实现.html">
+            
+                <a href="../排序/067_排序_快速排序算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5.3" data-path="../排序/068_排序_快速排序算法速度测试.html">
+            
+                <a href="../排序/068_排序_快速排序算法速度测试.html">
+            
+                    
+                    速度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5.4" data-path="../排序/067_排序_快速排序算法_总结.html">
+            
+                <a href="../排序/067_排序_快速排序算法_总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" >
+            
+                <span>
+            
+                    
+                    归并排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.6.1" data-path="../排序/069_排序_归并排序算法思路图解.html">
+            
+                <a href="../排序/069_排序_归并排序算法思路图解.html">
+            
+                    
+                    算法思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6.2" data-path="../排序/070_排序_归并排序算法代码实现.html">
+            
+                <a href="../排序/070_排序_归并排序算法代码实现.html">
+            
+                    
+                    算法代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6.3" data-path="../排序/071_排序_归并排序算法速度测试.html">
+            
+                <a href="../排序/071_排序_归并排序算法速度测试.html">
+            
+                    
+                    算法速度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6.4" data-path="../排序/071_排序_归并排序_总结.html">
+            
+                <a href="../排序/071_排序_归并排序_总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" >
+            
+                <span>
+            
+                    
+                    基数排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.7.1" data-path="../排序/072_排序_基数排序算法思路图解.html">
+            
+                <a href="../排序/072_排序_基数排序算法思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7.2" data-path="../排序/073_排序_基数排序算法代码实现.html">
+            
+                <a href="../排序/073_排序_基数排序算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7.3" data-path="../排序/075_排序_基数排序算法注意事项.html">
+            
+                <a href="../排序/075_排序_基数排序算法注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7.4" data-path="../排序/075_排序_基数排序算法_总结.html">
+            
+                <a href="../排序/075_排序_基数排序算法_总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7.5" data-path="../排序/075_排序_计数排序_总结.html">
+            
+                <a href="../排序/075_排序_计数排序_总结.html">
+            
+                    
+                    计数排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../排序/076_排序_排序算法时间复杂度比较.html">
+            
+                <a href="../排序/076_排序_排序算法时间复杂度比较.html">
+            
+                    
+                    排序算法时间复杂度比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    查找
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../查找/077_查找_线性查找分析和实现.html">
+            
+                <a href="../查找/077_查找_线性查找分析和实现.html">
+            
+                    
+                    线性查找分析和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" >
+            
+                <span>
+            
+                    
+                    二分查找算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.2.1" data-path="../查找/078_查找_二分查找算法思路图解.html">
+            
+                <a href="../查找/078_查找_二分查找算法思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.2" data-path="../查找/079_查找_二分查找算法代码实现.html">
+            
+                <a href="../查找/079_查找_二分查找算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.3" data-path="../查找/080_查找_二分查找算法功能完善.html">
+            
+                <a href="../查找/080_查找_二分查找算法功能完善.html">
+            
+                    
+                    功能完善
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" >
+            
+                <span>
+            
+                    
+                    插值查找算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.3.1" data-path="../查找/081_查找_插值查找算法工作原理.html">
+            
+                <a href="../查找/081_查找_插值查找算法工作原理.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3.2" data-path="../查找/082_查找_插值查找算法代码实现.html">
+            
+                <a href="../查找/082_查找_插值查找算法代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" >
+            
+                <span>
+            
+                    
+                    斐波那契查找
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.4.1" data-path="../查找/083_查找_斐波那契查找算法原理.html">
+            
+                <a href="../查找/083_查找_斐波那契查找算法原理.html">
+            
+                    
+                    算法原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.2" data-path="../查找/084_查找_斐波那契查找代码实现.html">
+            
+                <a href="../查找/084_查找_斐波那契查找代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.3" data-path="../查找/085_查找_斐波那契查找算法小结.html">
+            
+                <a href="../查找/085_查找_斐波那契查找算法小结.html">
+            
+                    
+                    算法小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    哈希表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../哈希表/086_哈希表_哈希表的介绍和内存布局.html">
+            
+                <a href="../哈希表/086_哈希表_哈希表的介绍和内存布局.html">
+            
+                    
+                    哈希表的介绍和内存布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../哈希表/087_哈希表_哈希表实现思路图解.html">
+            
+                <a href="../哈希表/087_哈希表_哈希表实现思路图解.html">
+            
+                    
+                    哈希表实现思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../哈希表/088_哈希表_哈希表代码实现.html">
+            
+                <a href="../哈希表/088_哈希表_哈希表代码实现.html">
+            
+                    
+                    哈希表代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../哈希表/090_数组_链表_树存储方式分析.html">
+            
+                <a href="../哈希表/090_数组_链表_树存储方式分析.html">
+            
+                    
+                    尚硅谷数组链表_树存储方式分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    二叉树
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../二叉树/091_二叉树_二叉树的概念和常用术语.html">
+            
+                <a href="../二叉树/091_二叉树_二叉树的概念和常用术语.html">
+            
+                    
+                    二叉树的概念和常用术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" >
+            
+                <span>
+            
+                    
+                    前序中序后序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../二叉树/092_序_前序中序后序遍历二叉树图解.html">
+            
+                <a href="../二叉树/092_序_前序中序后序遍历二叉树图解.html">
+            
+                    
+                    遍历二叉树图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.2" data-path="../二叉树/093_序_前序中序后序遍历代码实现.html">
+            
+                <a href="../二叉树/093_序_前序中序后序遍历代码实现.html">
+            
+                    
+                    遍历代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.3" data-path="../二叉树/095_序_前序中序后序查找思路图解.html">
+            
+                <a href="../二叉树/095_序_前序中序后序查找思路图解.html">
+            
+                    
+                    查找思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.4" data-path="../二叉树/096_序_前序中序后序查找代码实现.html">
+            
+                <a href="../二叉树/096_序_前序中序后序查找代码实现.html">
+            
+                    
+                    查找代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../二叉树/098_二叉树_二叉树删除结点思路图解.html">
+            
+                <a href="../二叉树/098_二叉树_二叉树删除结点思路图解.html">
+            
+                    
+                    二叉树删除结点思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../二叉树/099_二叉树_二叉树删除结点代码实现.html">
+            
+                <a href="../二叉树/099_二叉树_二叉树删除结点代码实现.html">
+            
+                    
+                    二叉树删除结点代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../二叉树/100_二叉树_顺序存储二叉树思路图解.html">
+            
+                <a href="../二叉树/100_二叉树_顺序存储二叉树思路图解.html">
+            
+                    
+                    顺序存储二叉树思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../二叉树/101_二叉树_顺序存储二叉树代码实现.html">
+            
+                <a href="../二叉树/101_二叉树_顺序存储二叉树代码实现.html">
+            
+                    
+                    顺序存储二叉树代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../二叉树/102_二叉树_线索化二叉树的介绍.html">
+            
+                <a href="../二叉树/102_二叉树_线索化二叉树的介绍.html">
+            
+                    
+                    线索化二叉树的介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../二叉树/103_二叉树_线索化二叉树思路图解.html">
+            
+                <a href="../二叉树/103_二叉树_线索化二叉树思路图解.html">
+            
+                    
+                    线索化二叉树思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../二叉树/104_二叉树_线索化二叉树代码实现1.html">
+            
+                <a href="../二叉树/104_二叉树_线索化二叉树代码实现1.html">
+            
+                    
+                    线索化二叉树代码实现1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.10" data-path="../二叉树/106_二叉树_遍历线索化二叉树实现.html">
+            
+                <a href="../二叉树/106_二叉树_遍历线索化二叉树实现.html">
+            
+                    
+                    遍历线索化二叉树实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    堆
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" >
+            
+                <span>
+            
+                    
+                    堆排序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1.1" data-path="../堆/107_堆_大顶堆和小顶堆图解说明.html">
+            
+                <a href="../堆/107_堆_大顶堆和小顶堆图解说明.html">
+            
+                    
+                    大顶堆和小顶堆图解说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.1.2" data-path="../堆/108_堆_堆排序的思路图解.html">
+            
+                <a href="../堆/108_堆_堆排序的思路图解.html">
+            
+                    
+                    堆排序的思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.1.3" data-path="../堆/109_堆_堆排序的代码实现1.html">
+            
+                <a href="../堆/109_堆_堆排序的代码实现1.html">
+            
+                    
+                    堆排序的代码实现1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.1.4" data-path="../堆/111_堆_堆排序的速度测试和小结.html">
+            
+                <a href="../堆/111_堆_堆排序的速度测试和小结.html">
+            
+                    
+                    堆排序的速度测试和小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" >
+            
+                <span>
+            
+                    
+                    赫夫曼树
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.2.1" data-path="../堆/112_堆_赫夫曼树的基本介绍.html">
+            
+                <a href="../堆/112_堆_赫夫曼树的基本介绍.html">
+            
+                    
+                    的基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2.2" data-path="../堆/113_堆_赫夫曼树创建步骤图解.html">
+            
+                <a href="../堆/113_堆_赫夫曼树创建步骤图解.html">
+            
+                    
+                    创建步骤图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2.3" data-path="../堆/114_堆_赫夫曼树创建代码实现.html">
+            
+                <a href="../堆/114_堆_赫夫曼树创建代码实现.html">
+            
+                    
+                    创建代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2.4" data-path="../堆/115_堆_变长编码的举例说明.html">
+            
+                <a href="../堆/115_堆_变长编码的举例说明.html">
+            
+                    
+                    变长编码的举例说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2.5" data-path="../堆/116_堆_赫夫曼编码的原理图解.html">
+            
+                <a href="../堆/116_堆_赫夫曼编码的原理图解.html">
+            
+                    
+                    原理图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    压缩解压
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    压缩
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../压缩解压/117_压缩解压_数据压缩-创建赫夫曼树思路.html">
+            
+                <a href="../压缩解压/117_压缩解压_数据压缩-创建赫夫曼树思路.html">
+            
+                    
+                    创建赫夫曼树思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.2" data-path="../压缩解压/118_压缩解压_数据压缩-创建赫夫曼树实现.html">
+            
+                <a href="../压缩解压/118_压缩解压_数据压缩-创建赫夫曼树实现.html">
+            
+                    
+                    创建赫夫曼树实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.3" data-path="../压缩解压/119_压缩解压_数据压缩-生成赫夫曼编码表.html">
+            
+                <a href="../压缩解压/119_压缩解压_数据压缩-生成赫夫曼编码表.html">
+            
+                    
+                    生成赫夫曼编码表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.4" data-path="../压缩解压/120_压缩解压_数据压缩-赫夫曼编码字节数组.html">
+            
+                <a href="../压缩解压/120_压缩解压_数据压缩-赫夫曼编码字节数组.html">
+            
+                    
+                    赫夫曼编码字节数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.5" data-path="../压缩解压/121_压缩解压_数据压缩-赫夫曼字节数组封装.html">
+            
+                <a href="../压缩解压/121_压缩解压_数据压缩-赫夫曼字节数组封装.html">
+            
+                    
+                    赫夫曼字节数组封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    解压
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="../压缩解压/122_压缩解压_数据解压-字节转二进制字符串.html">
+            
+                <a href="../压缩解压/122_压缩解压_数据解压-字节转二进制字符串.html">
+            
+                    
+                    数据解压-字节转二进制字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.2" data-path="../压缩解压/123_压缩解压_数据解压-赫夫曼解码.html">
+            
+                <a href="../压缩解压/123_压缩解压_数据解压-赫夫曼解码.html">
+            
+                    
+                    数据解压-赫夫曼解码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.3" data-path="../压缩解压/124_压缩解压_使用赫夫曼编码压缩文件.html">
+            
+                <a href="../压缩解压/124_压缩解压_使用赫夫曼编码压缩文件.html">
+            
+                    
+                    使用赫夫曼编码压缩文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.4" data-path="../压缩解压/125_压缩解压_使用赫夫曼编码解压文件.html">
+            
+                <a href="../压缩解压/125_压缩解压_使用赫夫曼编码解压文件.html">
+            
+                    
+                    使用赫夫曼编码解压文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.5" data-path="../压缩解压/126_压缩解压_赫夫曼编码注意事项.html">
+            
+                <a href="../压缩解压/126_压缩解压_赫夫曼编码注意事项.html">
+            
+                    
+                    赫夫曼编码注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    树
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" >
+            
+                <span>
+            
+                    
+                    BST
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1.1" data-path="../树/127_树_二叉排序树_BST的介绍.html">
+            
+                <a href="../树/127_树_二叉排序树_BST的介绍.html">
+            
+                    
+                    二叉排序树(BST)的介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.2" data-path="../树/128_树_二叉排序树_BST创建和遍历.html">
+            
+                <a href="../树/128_树_二叉排序树_BST创建和遍历.html">
+            
+                    
+                    二叉排序树(BST)创建和遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.3" data-path="../树/129_树_二叉排序树删除结点思路图解.html">
+            
+                <a href="../树/129_树_二叉排序树删除结点思路图解.html">
+            
+                    
+                    二叉排序树删除结点思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.4" data-path="../树/130_树_二叉排序树删除叶子结点1.html">
+            
+                <a href="../树/130_树_二叉排序树删除叶子结点1.html">
+            
+                    
+                    二叉排序树删除叶子结点(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.5" data-path="../树/132_树_BST删除有一颗子树的结点.html">
+            
+                <a href="../树/132_树_BST删除有一颗子树的结点.html">
+            
+                    
+                    BST删除有一颗子树的结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.6" data-path="../树/133_树_BST删除有二颗子树的结点.html">
+            
+                <a href="../树/133_树_BST删除有二颗子树的结点.html">
+            
+                    
+                    BST删除有二颗子树的结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.7" data-path="../树/134_树_BST删除结点的注意事项.html">
+            
+                <a href="../树/134_树_BST删除结点的注意事项.html">
+            
+                    
+                    BST删除结点的注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" >
+            
+                <span>
+            
+                    
+                    AVL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.2.1" data-path="../树/135_树_平衡二叉树_AVL树_介绍.html">
+            
+                <a href="../树/135_树_平衡二叉树_AVL树_介绍.html">
+            
+                    
+                    平衡二叉树(AVL树)介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.2" data-path="../树/136_树_AVL树左旋转思路图解.html">
+            
+                <a href="../树/136_树_AVL树左旋转思路图解.html">
+            
+                    
+                    AVL树左旋转思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.3" data-path="../树/137_树_AVL树高度求解.html">
+            
+                <a href="../树/137_树_AVL树高度求解.html">
+            
+                    
+                    AVL树高度求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.4" data-path="../树/138_树_AVL树左旋转代码实现.html">
+            
+                <a href="../树/138_树_AVL树左旋转代码实现.html">
+            
+                    
+                    AVL树左旋转代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.5" data-path="../树/139_树_AVL树右旋转图解和实现.html">
+            
+                <a href="../树/139_树_AVL树右旋转图解和实现.html">
+            
+                    
+                    AVL树右旋转图解和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.6" data-path="../树/140_树_AVL树双旋转图解和实现.html">
+            
+                <a href="../树/140_树_AVL树双旋转图解和实现.html">
+            
+                    
+                    AVL树双旋转图解和实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.7" data-path="../树/141_树_平衡二叉树_AVL树_小结.html">
+            
+                <a href="../树/141_树_平衡二叉树_AVL树_小结.html">
+            
+                    
+                    平衡二叉树(AVL树)小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../树/142_树_多叉树原理图解.html">
+            
+                <a href="../树/142_树_多叉树原理图解.html">
+            
+                    
+                    多叉树原理图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../树/143_树_2-3树原理图解.html">
+            
+                <a href="../树/143_树_2-3树原理图解.html">
+            
+                    
+                    2-3树原理图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../树/144_树_B树和B加树原理图解.html">
+            
+                <a href="../树/144_树_B树和B加树原理图解.html">
+            
+                    
+                    B树和B加树原理图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.6" data-path="../树/145_树_B星树和多路查找树小结.html">
+            
+                <a href="../树/145_树_B星树和多路查找树小结.html">
+            
+                    
+                    B星树和多路查找树小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../图/146_图_图的基本介绍和存储形式.html">
+            
+                <a href="../图/146_图_图的基本介绍和存储形式.html">
+            
+                    
+                    图的基本介绍和存储形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../图/147_图_图的创建图解和代码实现.html">
+            
+                <a href="../图/147_图_图的创建图解和代码实现.html">
+            
+                    
+                    图的创建图解和代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" >
+            
+                <span>
+            
+                    
+                    图的深度优先DFS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.3.1" data-path="../图/148_图_图的深度优先DFS算法图解.html">
+            
+                <a href="../图/148_图_图的深度优先DFS算法图解.html">
+            
+                    
+                    算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3.2" data-path="../图/149_图_图的深度优先DFS代码实现.html">
+            
+                <a href="../图/149_图_图的深度优先DFS代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" >
+            
+                <span>
+            
+                    
+                    图的广度优先BFS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.4.1" data-path="../图/150_图_图的广度优先BFS算法图解.html">
+            
+                <a href="../图/150_图_图的广度优先BFS算法图解.html">
+            
+                    
+                    算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4.2" data-path="../图/151_图_图的广度优先BFS代码实现.html">
+            
+                <a href="../图/151_图_图的广度优先BFS代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../图/152_图_DFS和BFS比较及图小结.html">
+            
+                <a href="../图/152_图_DFS和BFS比较及图小结.html">
+            
+                    
+                    DFS和BFS比较及图小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../算法/153_算法_二分查找非递归算法分析实现.html">
+            
+                <a href="../算法/153_算法_二分查找非递归算法分析实现.html">
+            
+                    
+                    二分查找非递归算法分析实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    分治算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.2.1" data-path="../算法/154_算法_分治算法的设计模式.html">
+            
+                <a href="../算法/154_算法_分治算法的设计模式.html">
+            
+                    
+                    分治算法的设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.2" data-path="../算法/155_算法_分治算法解决汉诺塔问题.html">
+            
+                <a href="../算法/155_算法_分治算法解决汉诺塔问题.html">
+            
+                    
+                    分治算法解决汉诺塔问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" >
+            
+                <span>
+            
+                    
+                    动态规划算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.3.1" data-path="../算法/156_算法_动态规划算法基本介绍.html">
+            
+                <a href="../算法/156_算法_动态规划算法基本介绍.html">
+            
+                    
+                    动态规划算法基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3.2" >
+            
+                <span>
+            
+                    
+                    动态规划算法解决背包问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.3.2.1" data-path="../算法/157_算法_动态规划算法解决背包问题1.html">
+            
+                <a href="../算法/157_算法_动态规划算法解决背包问题1.html">
+            
+                    
+                    1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3.2.2" data-path="../算法/158_算法_动态规划算法解决背包问题2.html">
+            
+                <a href="../算法/158_算法_动态规划算法解决背包问题2.html">
+            
+                    
+                    2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3.2.3" data-path="../算法/159_算法_动态规划算法解决背包问题3.html">
+            
+                <a href="../算法/159_算法_动态规划算法解决背包问题3.html">
+            
+                    
+                    3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../算法/160_算法_暴力匹配算法解决字串匹配问题.html">
+            
+                <a href="../算法/160_算法_暴力匹配算法解决字串匹配问题.html">
+            
+                    
+                    暴力匹配算法解决字串匹配问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" >
+            
+                <span>
+            
+                    
+                    KMP算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.5.1" data-path="../算法/161_算法_KMP算法解决字串匹配思路图解.html">
+            
+                <a href="../算法/161_算法_KMP算法解决字串匹配思路图解.html">
+            
+                    
+                    KMP算法解决字串匹配思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5.2" data-path="../算法/162_算法_KMP算法解决字串匹配代码实现.html">
+            
+                <a href="../算法/162_算法_KMP算法解决字串匹配代码实现.html">
+            
+                    
+                    KMP算法解决字串匹配代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../算法/163_算法_动态规划算法和KMP算法小结.html">
+            
+                <a href="../算法/163_算法_动态规划算法和KMP算法小结.html">
+            
+                    
+                    动态规划算法和KMP算法小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" >
+            
+                <span>
+            
+                    
+                    贪心算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.7.1" data-path="../算法/164_算法_贪心算法的基本介绍.html">
+            
+                <a href="../算法/164_算法_贪心算法的基本介绍.html">
+            
+                    
+                    贪心算法的基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7.2" >
+            
+                <span>
+            
+                    
+                    贪心算法解决集合覆盖
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.7.2.1" data-path="../算法/165_算法_贪心算法解决集合覆盖思路图解.html">
+            
+                <a href="../算法/165_算法_贪心算法解决集合覆盖思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7.2.2" data-path="../算法/166_算法_贪心算法解决集合覆盖代码实现.html">
+            
+                <a href="../算法/166_算法_贪心算法解决集合覆盖代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7.2.3" data-path="../算法/167_算法_贪心算法解决集合覆盖注意事项.html">
+            
+                <a href="../算法/167_算法_贪心算法解决集合覆盖注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8" >
+            
+                <span>
+            
+                    
+                    Prim
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.8.1" data-path="../算法/168_算法_Prim和MST介绍.html">
+            
+                <a href="../算法/168_算法_Prim和MST介绍.html">
+            
+                    
+                    普利姆算法(Prim)和MST介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8.2" >
+            
+                <span>
+            
+                    
+                    Prim算法解决修路问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.8.2.1" data-path="../算法/169_算法_Prim算法解决修路问题思路图解.html">
+            
+                <a href="../算法/169_算法_Prim算法解决修路问题思路图解.html">
+            
+                    
+                    思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8.2.2" data-path="../算法/170_算法_Prim算法解决修路问题生成图.html">
+            
+                <a href="../算法/170_算法_Prim算法解决修路问题生成图.html">
+            
+                    
+                    生成图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8.2.3" data-path="../算法/171_算法_Prim算法解决修路问题代码实现.html">
+            
+                <a href="../算法/171_算法_Prim算法解决修路问题代码实现.html">
+            
+                    
+                    代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.9" >
+            
+                <span>
+            
+                    
+                    Kruskal
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.9.1" data-path="../算法/172_算法_Kruskal算法图解.html">
+            
+                <a href="../算法/172_算法_Kruskal算法图解.html">
+            
+                    
+                    克鲁斯卡尔(Kruskal)算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.9.2" data-path="../算法/173_算法_Kruskal算法解决公交问题.html">
+            
+                <a href="../算法/173_算法_Kruskal算法解决公交问题.html">
+            
+                    
+                    Kruskal算法解决公交问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.10" >
+            
+                <span>
+            
+                    
+                    Dijkstra
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.10.1" data-path="../算法/178_算法_Dijkstra算法基本介绍.html">
+            
+                <a href="../算法/178_算法_Dijkstra算法基本介绍.html">
+            
+                    
+                    迪杰斯特拉(Dijkstra)算法基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.10.2" data-path="../算法/179_算法_Dijkstra算法思路图解.html">
+            
+                <a href="../算法/179_算法_Dijkstra算法思路图解.html">
+            
+                    
+                    Dijkstra算法思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.10.3" data-path="../算法/180_算法_Dijkstra算法解决最短路径问题.html">
+            
+                <a href="../算法/180_算法_Dijkstra算法解决最短路径问题.html">
+            
+                    
+                    Dijkstra算法解决最短路径问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11" >
+            
+                <span>
+            
+                    
+                    Floyd
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.11.1" data-path="../算法/185_算法_Floyd算法基本介绍.html">
+            
+                <a href="../算法/185_算法_Floyd算法基本介绍.html">
+            
+                    
+                    弗洛伊德(Floyd)算法基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11.2" data-path="../算法/186_算法_Floyd算法思路图解.html">
+            
+                <a href="../算法/186_算法_Floyd算法思路图解.html">
+            
+                    
+                    弗洛伊德(Floyd)算法思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11.3" >
+            
+                <span>
+            
+                    
+                    Floyd算法解决最短路径问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.11.3.1" data-path="../算法/187_算法_Floyd算法解决最短路径问题1.html">
+            
+                <a href="../算法/187_算法_Floyd算法解决最短路径问题1.html">
+            
+                    
+                    1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11.3.2" data-path="../算法/188_算法_Floyd算法解决最短路径问题2.html">
+            
+                <a href="../算法/188_算法_Floyd算法解决最短路径问题2.html">
+            
+                    
+                    2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12" >
+            
+                <span>
+            
+                    
+                    骑士周游问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.12.1" data-path="../算法/189_算法_骑士周游问题和游戏说明.html">
+            
+                <a href="../算法/189_算法_骑士周游问题和游戏说明.html">
+            
+                    
+                    问题和游戏说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12.2" data-path="../算法/190_算法_骑士周游问题思路图解.html">
+            
+                <a href="../算法/190_算法_骑士周游问题思路图解.html">
+            
+                    
+                    问题思路图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12.3" data-path="../算法/191_算法_骑士周游回溯算法代码实现1.html">
+            
+                <a href="../算法/191_算法_骑士周游回溯算法代码实现1.html">
+            
+                    
+                    回溯算法代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12.4" data-path="../算法/194_算法_骑士周游回溯算法用贪心算法优化.html">
+            
+                <a href="../算法/194_算法_骑士周游回溯算法用贪心算法优化.html">
+            
+                    
+                    回溯算法用贪心算法优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    课件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../000_幻灯片课件.html">
+            
+                <a href="../000_幻灯片课件.html">
+            
+                    
+                    幻灯片课件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" >
+            
+                <a target="_blank" href="http://victorfengming.gitee.io/file/pdf/data_algorithm.pdf">
+            
+                    
+                    PDF课件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;"><b></b>&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;"><b></b>&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;"><b></b>&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;"><b></b>&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><b></b>&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</a></li></ul></ul></ul></div><a href="#&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;"><a name="&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5148;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;&#x9898;</h1>
+<h2 id="&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;"><a name="&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;</h2>
+<p>&#x516B;&#x7687;&#x540E;&#x95EE;&#x9898;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x53E4;&#x8001;&#x800C;&#x8457;&#x540D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x662F;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;&#x7684;&#x5178;&#x578B;&#x6848;&#x4F8B;&#x3002;&#x8BE5;&#x95EE;&#x9898;&#x662F;&#x56FD;&#x9645;&#x897F;&#x6D0B;&#x68CB;&#x68CB;&#x624B;&#x9A6C;&#x514B;&#x65AF;&#xB7;&#x8D1D;&#x745F;&#x5C14;&#x4E8E;1848&#x5E74;&#x63D0;&#x51FA;&#xFF1A;&#x5728;8&#xD7;8&#x683C;&#x7684;&#x56FD;&#x9645;&#x8C61;&#x68CB;&#x4E0A;&#x6446;&#x653E;&#x516B;&#x4E2A;&#x7687;&#x540E;&#xFF0C;&#x4F7F;&#x5176;&#x4E0D;&#x80FD;&#x4E92;&#x76F8;&#x653B;&#x51FB;&#xFF0C;&#x5373;&#xFF1A;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;&#x7687;&#x540E;&#x90FD;&#x4E0D;&#x80FD;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x884C;&#x3001;&#x540C;&#x4E00;&#x5217;&#x6216;&#x540C;&#x4E00;&#x659C;&#x7EBF;&#x4E0A;&#xFF0C;&#x95EE;&#x6709;&#x591A;&#x5C11;&#x79CD;&#x6446;&#x6CD5;&#x3002;&#x3010;92&#x3011;</p>
+<h3 id="&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;"><a name="&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x5230;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;</h3>
+<p>&#x9AD8;&#x65AF;&#x8BA4;&#x4E3A;&#x6709;76&#x79CD;&#x65B9;&#x6848;&#x3002;1854&#x5E74;&#x5728;&#x67CF;&#x6797;&#x7684;&#x8C61;&#x68CB;&#x6742;&#x5FD7;&#x4E0A;&#x4E0D;&#x540C;&#x7684;&#x4F5C;&#x8005;&#x53D1;&#x8868;&#x4E86;40&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x89E3;&#xFF0C;&#x540E;&#x6765;&#x6709;&#x4EBA;&#x7528;&#x56FE;&#x8BBA;&#x7684;&#x65B9;&#x6CD5;&#x89E3;&#x51FA;92&#x79CD;&#x7ED3;&#x679C;&#x3002;&#x8BA1;&#x7B97;&#x673A;&#x53D1;&#x660E;&#x540E;&#xFF0C;&#x6709;&#x591A;&#x79CD;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x6B64;&#x95EE;&#x9898;</p>
+<p><a href="../img/image_1.png" data-lightbox="baf7e4fa-e690-4484-9b04-efad9634f89d" data-title="image_1"><img src="../img/image_1.png" alt="image_1"></a></p>
+<h2 id="&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;"><a name="&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;</h2>
+<p>&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;&#x4ECB;&#x7ECD;&#x548C;&#x6E38;&#x620F;&#x6F14;&#x793A;
+&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x7B97;&#x6CD5;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x9A91;&#x58EB;&#x5468;&#x6E38;&#x95EE;&#x9898;
+&#x5C06;&#x9A6C;&#x968F;&#x673A;&#x653E;&#x5728;&#x56FD;&#x9645;&#x8C61;&#x68CB;&#x7684;8&#xD7;8&#x68CB;&#x76D8;<code>Board[0&#xFF5E;7][0&#xFF5E;7]</code>&#x7684;&#x67D0;&#x4E2A;&#x65B9;&#x683C;&#x4E2D;&#xFF0C;&#x9A6C;&#x6309;&#x8D70;&#x68CB;&#x89C4;&#x5219;(&#x9A6C;&#x8D70;&#x65E5;&#x5B57;)&#x8FDB;&#x884C;&#x79FB;&#x52A8;&#x3002;&#x8981;&#x6C42;&#x6BCF;&#x4E2A;&#x65B9;&#x683C;&#x53EA;&#x8FDB;&#x5165;&#x4E00;&#x6B21;&#xFF0C;&#x8D70;&#x904D;&#x68CB;&#x76D8;&#x4E0A;&#x5168;&#x90E8;64&#x4E2A;&#x65B9;&#x683C;
+&#x6E38;&#x620F;&#x6F14;&#x793A;: <a href="http://www.4399.com/flash/146267_2.htm" target="_blank">http://www.4399.com/flash/146267_2.htm</a> </p>
+<p>&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x56FE;&#x7684;&#x6DF1;&#x5EA6;&#x4F18;&#x5316;&#x904D;&#x5386;&#x7B97;&#x6CD5;(DFS) + &#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x4F18;&#x5316;</p>
+<p><a href="../img/image_2.png" data-lightbox="c6db7407-c86c-4004-9474-c4f2d3bbcb85" data-title="image_2"><img src="../img/image_2.png" alt="image_2"></a></p>
+<h3 id="&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><a name="&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x6E38;&#x620F;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h3>
+<ul>
+<li>1)&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x95EE;&#x9898;(&#x9A91;&#x58EB;&#x5468;&#x6E38;&#x95EE;&#x9898;)&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x56FE;&#x7684;&#x6DF1;&#x5EA6;
+&#x4F18;&#x5148;&#x641C;&#x7D22;(DFS)&#x7684;&#x5E94;&#x7528;&#x3002;</li>
+<li>2)&#x5982;&#x679C;&#x4F7F;&#x7528;&#x56DE;&#x6EAF;(&#x5C31;&#x662F;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;)&#x6765;&#x89E3;&#x51B3;&#xFF0C;&#x52A0;
+&#x5165;&#x9A6C;&#x513F;&#x8E0F;&#x4E86;53&#x4E2A;&#x70B9;&#xFF0C;&#x5982;&#x56FE;:&#x8D70;&#x5230;&#x4E86;&#x7B2C;53&#x4E2A;&#xFF0C;&#x5750;&#x6807;
+(1,0) &#xFF0C;&#x53D1;&#x73B0;&#x5DF2;&#x7ECF;&#x8D70;&#x5230;&#x5C3D;&#x5934;&#xFF0C;&#x6CA1;&#x529E;&#x6CD5;&#xFF0C;&#x90A3;&#x5C31;&#x53EA;&#x80FD;
+&#x56DE;&#x9000;&#x4E86;&#xFF0C;&#x67E5;&#x770B;&#x5176;&#x4ED6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5C31;&#x5728;&#x68CB;&#x76D8;&#x4E0A;&#x4E0D;&#x505C;&#x7684;&#x56DE;
+.....&#x6548;&#x7387;&#x5F88;&#x4F4E;&#xFF0C;</li>
+<li>3)&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;( greedyalgorithm)&#x8FDB;&#x884C;
+&#x4F18;&#x5316;&#x3002;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x4F18;&#x5316;&#x601D;&#x8DEF;&#x6765;&#x89E3;&#x51B3;&#x9A6C;
+&#x8E0F;&#x68CB;&#x76D8;&#x95EE;&#x9898;.</li>
+<li>4)&#x9A6C;&#x8E0F;&#x68CB;&#x76D8;&#x95EE;&#x9898;&#x601D;&#x8DEF;&#x5206;&#x6790;+&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</li>
+<li>5)&#x4F7F;&#x7528;&#x524D;&#x9762;&#x7684;&#x6E38;&#x620F;&#x6765;&#x9A8C;&#x8BC1;&#x7B97;&#x6CD5;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</li>
+</ul>
+<p><a href="../img/bilibili_line.png" data-lightbox="775da7bc-83f7-4157-99bb-a37e3c50bc58" data-title="&#x54D4;&#x54E9;&#x54D4;&#x54E9;&#x52A8;&#x753B;"><img src="../img/bilibili_line.png" alt="&#x54D4;&#x54E9;&#x54D4;&#x54E9;&#x52A8;&#x753B;"></a></p>
+<p></p><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz',appKey: 'nWerbwV2WMAxOEmAMkJKvXzs',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script> <p></p>
+<footer class="page-footer"><span class="copyright">victorfengming.gitee.io&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">&#x7F72;&#x540D;4.0&#x56FD;&#x9645;(CC BY 4.0)&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2021-10-28 01:06:07
+</span></footer></body></html>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="001_面试题_几个经典的算法面试题.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2","level":"1.2.2","depth":2,"next":{"title":"准备","level":"1.3","depth":1,"ref":"","articles":[{"title":"前言_内容介绍和授课方式","level":"1.3.1","depth":2,"path":"起步/003_前言_内容介绍和授课方式.md","ref":"起步/003_前言_内容介绍和授课方式.md","articles":[]},{"title":"起步_数据结构和算法的关系","level":"1.3.2","depth":2,"path":"起步/004_起步_数据结构和算法的关系.md","ref":"起步/004_起步_数据结构和算法的关系.md","articles":[]},{"title":"起步_编程中遇到的问题","level":"1.3.3","depth":2,"path":"起步/005_起步_编程中遇到的问题.md","ref":"起步/005_起步_编程中遇到的问题.md","articles":[]},{"title":"入门_线性结构和非线性结构","level":"1.3.4","depth":2,"path":"起步/006_入门_线性结构和非线性结构.md","ref":"起步/006_入门_线性结构和非线性结构.md","articles":[]}]},"previous":{"title":"1","level":"1.2.1","depth":2,"path":"起步/001_面试题_几个经典的算法面试题.md","ref":"起步/001_面试题_几个经典的算法面试题.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","valine","hide-element","chapter-fold","expandable-chapters","favicon","lightbox","splitter","-lunr","pageview-count","ancre-navigation","-search","search-plus","-highlight","popup","prism","prism-themes","-sharing","sharing-plus","tbfed-pagefooter","toolbar-button"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"victorfengming.gitee.io，使用<a href='https://creativecommons.org/licenses/by/4.0/deed.zh'>署名4.0国际(CC BY 4.0)协议</a>发布","modify_label":"最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"toolbar-button":{"label":"下载PDF","url":"https://victorfengming.gitee.io/data_algorithm/","icon":"fa-file-pdf-o"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./img/avator.png.icon.ico","bookmark":"./img/avator.png.icon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"prism-themes":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","line","linkedin","messenger","pocket","qq","qzone","stumbleupon","twitter","viber","vk","weibo","whatsapp"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"valine":{"placeholder":"Just go go","avatar":"","pageSize":10,"lang":"zh-CN","recordIP":false,"appId":"CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz","appKey":"nWerbwV2WMAxOEmAMkJKvXzs"},"search-plus":{}},"theme":"default","author":"Victor <victorfengming@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"data algorithm","language":"zh-hans","links":{"sidebar":{"文档索引页":"https://victorfengming.gitee.io/index/gitbook/"}},"gitbook":"3.2.3","description":"data algorithm,数据结构与算法"},"file":{"path":"起步/002_面试题_几个经典的算法面试题2.md","mtime":"2021-10-27T17:06:07.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-28T01:57:09.584Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

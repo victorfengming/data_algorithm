@@ -1,0 +1,6 @@
+.idea
+.gitee
+.out
+*.iml
+sgg/node_modules
+out
